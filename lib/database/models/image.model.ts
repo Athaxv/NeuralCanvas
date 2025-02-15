@@ -12,7 +12,11 @@ export interface Image extends Document {
     aspectRatio?: string,
     color?: string,
     prompt?: string,
-    author: string,
+    author: {
+        _id: string,
+        firstname: string,
+        lastname: string,
+    },
     createdAt?: Date,
     updatedAt?: Date,
 }
