@@ -6,11 +6,6 @@ import { twMerge } from "tailwind-merge";
 
 import { aspectRatioOptions } from "@/constants";
 
-type RemoveUrlQueryParams = {
-  searchParams: URLSearchParams;
-  keysToRemove: string[];
-};
-
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
